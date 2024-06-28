@@ -3,7 +3,7 @@
 // critical breakpoint of viewport width
 let vwBreak = 1350;
 
-const BASE_URL = "https://remotestorage-a7059-default-rtdb.europe-west1.firebasedatabase.app/";
+const BASE_URL = "https://join-cvo-default-rtdb.europe-west1.firebasedatabase.app/";
 
 /* Background colors for profile initials */
 let backgroundProfileColors = [
@@ -36,7 +36,7 @@ function getRandomBackgroundColor() {
 
 /**
  * load data function
- * @param {*} path 
+ * @param {*} path
  * @returns JSON-Array
  */
 async function loadData(path = "") {
@@ -46,9 +46,9 @@ async function loadData(path = "") {
 
 /**
  * put data function
- * @param {*} path 
- * @param {*} data 
- * @returns 
+ * @param {*} path
+ * @param {*} data
+ * @returns
  */
 async function putData(path = "", data = {}) {
   let response = await fetch(BASE_URL + path + ".json", {
@@ -80,7 +80,7 @@ async function includeHTML() {
 
 /**
  * function to return the name of the logged in user
- * @returns 
+ * @returns
  */
 function getLoggedInUserName() {
   let user = [];
