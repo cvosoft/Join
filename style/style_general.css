@@ -13,6 +13,7 @@
 input,
 button {
   border: unset;
+  font-family: "Inter", sans-serif;
 }
 
 mobile-footer,
